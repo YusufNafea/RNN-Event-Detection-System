@@ -1,4 +1,11 @@
-<img width="701" height="1621" alt="RNN-Event-Detection-System_Project Diagram" src="https://github.com/user-attachments/assets/1562dbb1-bcca-4e4c-88b7-6fb0c7556cf3" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/e7b4d3eb-8c65-4e86-bcf5-6c8a69d8ecf1" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/ca35b215-2bec-4065-b87d-0ca91fb02848" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/c7603459-c906-4276-a026-e573a1b931d5" />
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/8fb05c90-4968-4df1-9211-5f858c4658c8" />
+<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/1f945067-622e-47bb-b5e2-0fba2ee7e6de" />
+
+
+
 🚗 RNN Event Detection System - Complete Documentation
 Table of Contents
 
