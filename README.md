@@ -1,4 +1,4 @@
-                                                                                🚗 RNN Event Detection System - Complete Documentation
+🚗 RNN Event Detection System - Complete Documentation
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. System Overview:
 The RNN Event Detection System is an AI-powered web application that predicts potential vehicle collisions by analyzing vehicle movement patterns. It uses deep learning (specifically LSTM neural networks) to detect dangerous trajectories before accidents occur.
