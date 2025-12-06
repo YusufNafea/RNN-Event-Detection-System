@@ -1,79 +1,23 @@
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/e7b4d3eb-8c65-4e86-bcf5-6c8a69d8ecf1" />
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/ca35b215-2bec-4065-b87d-0ca91fb02848" />
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/c7603459-c906-4276-a026-e573a1b931d5" />
-<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/8fb05c90-4968-4df1-9211-5f858c4658c8" />
-<img width="1920" height="1080" alt="5" src="https://github.com/user-attachments/assets/1f945067-622e-47bb-b5e2-0fba2ee7e6de" />
-
-
-
-🚗 RNN Event Detection System - Complete Documentation
-Table of Contents
-
-System Overview
-Architecture
-Machine Learning Model
-Backend Documentation
-Frontend Documentation
-Data Flow
-API Documentation
-Setup Guide
-Troubleshooting
-
-
-1. System Overview
-What is This System?
+                                                                                🚗 RNN Event Detection System - Complete Documentation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. System Overview:
 The RNN Event Detection System is an AI-powered web application that predicts potential vehicle collisions by analyzing vehicle movement patterns. It uses deep learning (specifically LSTM neural networks) to detect dangerous trajectories before accidents occur.
-Real-World Applications
 
-Autonomous Vehicles: Predict collisions before they happen
-Traffic Management: Identify dangerous intersections
-Fleet Management: Monitor driver behavior
-Insurance: Risk assessment
-Smart Cities: Traffic flow optimization
+--> Real-World Applications
+(  Autonomous Vehicles: Predict collisions before they happen
+   Traffic Management: Identify dangerous intersections
+   Fleet Management: Monitor driver behavior
+   Insurance: Risk assessment
+   Smart Cities: Traffic flow optimization  )
 
-Key Features
-✅ Real-time prediction - Analyze vehicle trajectories in seconds
-✅ High accuracy - 85-90% prediction accuracy
-✅ Visual results - Interactive charts and tables
-✅ CSV file support - Easy data upload
-✅ Web-based - No installation needed
-✅ RESTful API - Can integrate with other systems
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. Architecture:
+System Architecture Diagram:
+<img width="701" height="1621" alt="RNN-Event-Detection-System_Project Diagram" src="https://github.com/user-attachments/assets/995da967-c9ea-4602-abb1-4904c2408077" />
 
-2. Architecture
-System Architecture Diagram
-┌─────────────────────────────────────────────────────────────┐
-│                        USER BROWSER                          │
-│  ┌────────────────────────────────────────────────────┐    │
-│  │   React Frontend (JavaScript)                       │    │
-│  │   - UI Components                                   │    │
-│  │   - Data Visualization (Charts)                     │    │
-│  │   - File Upload Interface                           │    │
-│  └────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-                            ↕ HTTP/REST API
-┌─────────────────────────────────────────────────────────────┐
-│                        SERVER (WSL/Linux)                    │
-│  ┌────────────────────────────────────────────────────┐    │
-│  │   Flask Backend (Python)                            │    │
-│  │   - REST API Endpoints                              │    │
-│  │   - Data Preprocessing                              │    │
-│  │   - Model Loading                                   │    │
-│  └────────────────────────────────────────────────────┘    │
-│                            ↕                                 │
-│  ┌────────────────────────────────────────────────────┐    │
-│  │   PyTorch LSTM Model                                │    │
-│  │   - 2-Layer LSTM Network                            │    │
-│  │   - 64 Hidden Units per Layer                       │    │
-│  │   - Binary Classification (Safe/Collision)          │    │
-│  └────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-Technology Stack
-LayerTechnologyPurposeFrontendReact 18User interface and interactionsStylingTailwindCSSModern, responsive designChartsChart.jsData visualizationBackendFlask 2.3REST API serverML FrameworkPyTorch 2.0Deep learningData ProcessingNumPy, PandasData manipulationModel TypeLSTM (RNN)Sequential data analysis
-
-3. Machine Learning Model
-3.1 What is an LSTM?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. Machine Learning Model:
 LSTM stands for Long Short-Term Memory. It's a type of Recurrent Neural Network (RNN) designed to remember patterns over time.
-Why LSTM for Vehicle Collision Detection?
 Regular Neural Networks look at data as a snapshot:
 Input: [position_x, position_y, velocity_x, velocity_y]
 Output: Safe or Collision
@@ -125,8 +69,6 @@ Processes each timestep sequentially
 Maintains a "memory" of previous movements
 Identifies basic movement patterns (straight line, turning, acceleration)
 
-
-
 Layer 2: Dropout
 
 Rate: 30%
@@ -142,8 +84,6 @@ What it does:
 Further refines the patterns
 Learns high-level trajectory characteristics
 Recognizes collision-specific movements
-
-
 
 Layer 4: Fully Connected + ReLU
 
@@ -278,7 +218,8 @@ Curved paths
 Deceleration
 Maintaining distance
 
-4. Backend Documentation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Backend Documentation: 
 4.1 Backend Structure
 backend/
 ├── app.py              # Flask server & API endpoints
@@ -544,7 +485,8 @@ optimizer = torch.optim.Adam(
     lr=0.001  # Learning rate
 )
 
-5. Frontend Documentation
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Frontend Documentation: 
 5.1 Frontend Structure
 frontend/
 ├── public/
@@ -721,8 +663,8 @@ const isSafe = label === 'Safe';
 
 // Apply styling
 const color = isSafe ? 'green' : 'red';
-
-6. Data Flow
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6. Data Flow: 
 6.1 Complete Request Flow
 User Action: Upload CSV File
         ↓
@@ -815,18 +757,9 @@ Step 9: JSON Response
 Step 10: Display
 ✅ Safe (75% confidence)
 
-7. API Documentation
-Base URL
-http://localhost:5000
-Endpoints
-1. GET / - API Information
-Description: Returns API information and available endpoints
-Response:
-json{
-    "message": "RNN Event Detection API",
-    "version": "1.0.0",
-    "status": "online",
-    "model_loaded": true,
-    "endpoints": {
-        "GET /": "API information",
-        "GET /api/model-info
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
